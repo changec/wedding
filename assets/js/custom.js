@@ -46,6 +46,7 @@ jQuery(document).ready(function($){
 		}
 	});
 });
+/*------------ Google map ---------------*/
 $(function(){ 
     // direction
     //var direction = ;
@@ -85,6 +86,37 @@ $(function(){
             map.tinyMap('modify', opt);
 			obj.data('toggle', ++toggle);
         });
-   
+});
 
+/*------------ 送出表單 ---------------*/
+$("#submitForm").click(function(event){
+	var result = { };
+	var formURL = $('#wedding-form').attr("action");
+	var postData = $('#wedding-form').serializeArray();
+	//取得表單的值
+	$.each(postData, function() {result[this.name] = this.value;});
+	name = result['name'];
+	tel = result['tel'];
+	addr = result['addr'];
+	if((name && tel && addr)){
+		$.ajax({
+			url : formURL,
+			type: "POST",
+			data : postData,
+			success:function(data, textStatus, jqXHR) {
+				if(data=='done'){
+					//location.reload();
+				//}else if(data=='login fail'){
+						alert('good');
+				}
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log('textStatus='+textStatus+';errorThrown='+errorThrown);
+			}
+		}); 		
+	}else{
+		console.log('請輸入必填欄位！！');
+		return;
+	}
+	event.preventDefault();
 });

@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2 class="text-center">問卷填寫</h2>
-                    <form id="wedding-form" role="form">
+                    <form id="wedding-form" role="form" action="<?php echo base_url()?>cw/insertData" method="post">
 						<div class="form-group">
 							<label class="wedding" for="name">1.您的大名</label>
 							<input type="text" class="form-control" id="name" name="name" placeholder="請告訴我們您的大名，讓我們知道你是誰唷～">
@@ -77,7 +77,7 @@
 							<label class="wedding" for="say_something">9.說點什麼吧！</label>
 							<textarea class="form-control" rows="3"  id="say_something" name="say_something" placeholder="有甚麼想說的都可以留在這邊唷～"></textarea>
 						</div>
-						<button type="submit" class="btn btn-dark">寫好就送出吧！</button>
+						<button id="submitForm" type="submit" class="btn btn-dark">寫好就送出吧！</button>
 					</form>
                     <!-- /.row (nested) -->
                 </div>

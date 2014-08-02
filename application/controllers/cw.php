@@ -6,6 +6,7 @@ class Cw extends CI_Controller {
     {
         parent::__construct();
 		$this->load->model('theme_model');
+		$this->load->model('wedding_model');
     }
 
 	
@@ -14,6 +15,37 @@ class Cw extends CI_Controller {
 		//$this->load->view('index');
 		$data = '';
 		$this->theme_model->loadTheme('index',$data);
+	}
+	
+	public function insertData()
+	{
+				   $name = $this->theme_model->filter($this->input->post("name"));
+		$change_or_wendy = $this->theme_model->filter($this->input->post("change_or_wendy"));
+				$is_join = $this->theme_model->filter($this->input->post("is_join"));
+					$big = $this->theme_model->filter($this->input->post("big"));
+				  $small = $this->theme_model->filter($this->input->post("small"));
+				$when_su = $this->theme_model->filter($this->input->post("when_su"));
+					$tel = $this->theme_model->filter($this->input->post("tel"));
+				   $addr = $this->theme_model->filter($this->input->post("addr"));
+		  $say_something = $this->theme_model->filter($this->input->post("say_something"));
+					 $ip = $this->theme_model->getIp();
+		
+		$data = array(
+					   'name' => $name,
+		 	'change_or_wendy' => $change_or_wendy,
+					'is_join' => $is_join,
+						'big' => $big,
+					  'small' => $small,
+					'when_su' => $when_su,
+						'tel' => $tel,
+					   'addr' => $addr,
+			  'say_something' => $say_something,
+						 'ip' => $ip
+		);
+		$this->wedding_model->insertData($data);
+		
+		echo 'done';
+		die();
 	}
 }
 

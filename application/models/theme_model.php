@@ -26,4 +26,12 @@ class Theme_model extends CI_Model {
 		}
 		return $ip;
 	}
+	
+	function filter($value)
+	{
+	
+	$xss_clean = $this->security->xss_clean($value);
+	$htmlspecialchars = htmlspecialchars($xss_clean, ENT_QUOTES );
+	return $htmlspecialchars;
+	}
 }

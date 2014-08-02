@@ -1,0 +1,15 @@
+<?php
+class Wedding_model extends CI_Model {
+  
+    function __construct()
+    {
+        parent::__construct();
+    }
+	
+	//新增資料
+	function insertData($data)
+	{
+		$this -> db -> insert('guest_file', $data);
+		//return $this->db->insert_id();
+	}
+}
