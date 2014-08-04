@@ -19,6 +19,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="<?=base_url()?>assets/js/bootstrap.min.js"></script>
 
+	<!-- masonry -->
+	<script src="<?=base_url()?>assets/js/masonry.pkgd.min.js"></script>
+	
 	<!-- Form Validation -->
 	<script src="<?=base_url()?>assets/js/jquery-validation/jquery.validate.js"></script>
     

@@ -107,7 +107,7 @@ $("#submitForm").click(function(event){
 				if(data=='done'){
 					//location.reload();
 				//}else if(data=='login fail'){
-						alert('good');
+					$('#done').modal();
 				}
 			},
 			error: function(jqXHR, textStatus, errorThrown) {

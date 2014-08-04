@@ -248,3 +248,8 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+.item { width: 25%; }
+@media (max-width:768px) { 
+	.item { width: 100%; }
+}

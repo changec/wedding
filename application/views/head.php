@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>我們的故事</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?=base_url()?>assets/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
             <li>
                 <a href="#top">Home</a>
 				<a href="#write">問卷填寫</a>
-				<a href="#path">宴客場地</a>
+				<a href="#path">宴客地點</a>
             </li>
         </ul>
     </nav>

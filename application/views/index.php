@@ -12,7 +12,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2 class="text-center">問卷填寫</h2>
+					<h2 class="text-center">問卷填寫</h2>
+					<hr class="small">
                     <form id="wedding-form" role="form" action="<?php echo base_url()?>cw/insertData" method="post">
 						<div class="form-group">
 							<label class="wedding" for="name">1.您的大名</label>
@@ -90,19 +91,20 @@
 	<aside id="path">
         <div class="container">
             <div class="row">
-                <h2 class="text-center">路徑規劃</h2>
+                <h2 class="text-center">宴客地點</h2>
+				<hr class="small">
             </div>
         </div>
     </aside>
 
     <!-- Call to Action -->
-    <section class="services bg-primary">
-	<div class="container">
+    <section class="">
+	<div class="container well well-lg">
 		<div class="row">
 			<div class="col-lg-4">
 				<div id="path-form">
 				<div class="form-group" style="padding-bottom:15px;">
-					<label class="wedding" for="which">請輸入要參加的場次</label>
+					<label class="wedding" for="which">請選擇你要參加的場次</label>
 					<div class="radio">
 						<label>
 							<input type="radio" name="which" id="change" value="新北市三峽區正義街11-3號" checked="checked"> 男方 金帝王海鮮餐廳 新北市三峽區正義街11-3號
@@ -128,48 +130,46 @@
 		</div>
 	</div>
 </section>
- <section id="portfolio" class="portfolio">
+ <section id="portfolio" class="portfolio bg-primary">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>婚紗照blabla</h2>
+				<div class="col-lg-10 col-lg-offset-1 text-center">
+					<h2>婚紗照</h2>
                     <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="assets/img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="assets/img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="assets/img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="assets/img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More</a>
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
+				</div>
+			</div>
+			<div class="row">
+			<div class="container">
+				<div id="masonry" class="row js-masonry" data-masonry-options='{ "itemSelector": ".item" }'>
+					<?php for($i=1;$i<25;$i++){?>
+					<div class="col-sm-6 item">
+                	<div style="margin-bottom: 30px;">
+						<img class="img-portfolio img-responsive" src="assets/img/<?echo $i?>.jpg">
+                	</div>
+					</div>
+					<?}?>
+			</div>
+		</div>
+			</div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="done" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" onclick="location.href = '#path'"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="myModalLabel">　</h4>
+				</div>
+				<div class="modal-body">
+					感謝您的填寫，期待當天您的到來唷，往下還有路線圖以及我們的婚紗照喔～
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-dark" data-dismiss="modal" onclick="location.href = '#path'">確定</button>
+				</div>
+			</div>
+		</div>
+	</div>
