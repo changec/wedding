@@ -163,7 +163,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    background: url(../img/bg.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -237,6 +237,9 @@ hr.small {
 #map{width: 100%;height:500px;
 }
 
+.bg-primary{background: #4eaba3;}
+
+/* RWD */
 @media(max-width:768px) {
     .map {
         height: 75%;
