@@ -131,30 +131,30 @@
 	</div>
 </section>
  <section id="portfolio" class="portfolio bg-primary">
-        <div class="container">
-            <div class="row">
-				<div class="col-lg-10 col-lg-offset-1 text-center">
-					<h2>婚紗照</h2>
-                    <hr class="small">
-				</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1 text-center">
+				<h2>婚紗照</h2>
+				<hr class="small">
 			</div>
-			<div class="row">
+		</div>
+		<div class="row">
 			<div class="container">
 				<div id="masonry" class="row js-masonry" data-masonry-options='{ "itemSelector": ".item" }'>
 					<?php for($i=1;$i<25;$i++){?>
 					<div class="col-sm-6 item">
-                	<div style="margin-bottom: 30px;">
-						<img class="img-portfolio img-responsive" src="assets/img/<?echo $i?>.jpg">
-                	</div>
+						<div style="margin-bottom: 30px;">
+							<img class="img-portfolio img-responsive" src="assets/img/<?echo $i?>.jpg">
+						</div>
 					</div>
 					<?}?>
+				</div>
 			</div>
 		</div>
-			</div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+        <!-- /.row -->
+	</div>
+    <!-- /.container -->
+</section>
 	
 	<!-- Modal -->
 	<div class="modal fade" id="done" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
