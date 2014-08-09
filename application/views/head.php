@@ -43,6 +43,7 @@
                 <a href="#top">Home</a>
 				<a href="#write">問卷填寫</a>
 				<a href="#path">宴客地點</a>
+				<a href="#portfolio">婚紗照</a>
             </li>
         </ul>
     </nav>

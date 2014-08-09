@@ -14,21 +14,32 @@
                 <div class="col-lg-8 col-lg-offset-2">
 					<h2 class="text-center">問卷填寫</h2>
 					<hr class="small">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4">
+								<h3>訂婚</h3>
+								<h4>時間：<u>2014年10月18日</u> 星期六中午</h4>
+								<h4>地點：<u>新北市新莊區中正路465號</u> 海大王海鮮餐廳</h4>
+							</div>
+							<div class="col-lg-4">
+								<h3>結婚</h3>
+								<h4>時間：<u>2014年11月23日</u> 星期日中午</h4>
+								<h4>地點：<u>新北市三峽區正義街11-3號</u> 金帝王海鮮餐廳</h4>
+							</div>
+						</div>
+					</div>
+					
                     <form id="wedding-form" role="form" action="<?php echo base_url()?>cw/insertData" method="post">
 						<div class="form-group">
 							<label class="wedding" for="name">1.您的大名</label>
 							<input type="text" class="form-control" id="name" name="name" placeholder="請告訴我們您的大名，讓我們知道你是誰唷～">
 						</div>
 						<div class="form-group" style="padding-bottom:15px;">
-							<label class="wedding" for="change_or_wendy">2.您是男方還是女方的朋友呢?</label>
-							<div>
-								<label class="radio-inline">
-									<input type="radio" name="change_or_wendy" id="change" value="change" checked="checked"> 男方
-								</label>
-								<label class="radio-inline">
-									<input type="radio" name="change_or_wendy" id="wendy" value="wendy"> 女方
-								</label>
-							</div>
+							<label class="wedding" for="changewendy">2.您是男方還是女方的朋友呢?</label>
+							<select class="form-control" id="changewendy" name="changewendy">
+								<option value="0">男方(承致)</option>
+								<option value="1">女方(惠雅)</option>
+							</select>
 						</div>
 						
 						<div class="form-group">
@@ -140,11 +151,11 @@
 		</div>
 		<div class="row">
 			<div class="container">
-				<div id="masonry" class="row js-masonry" data-masonry-options='{ "itemSelector": ".item" }'>
+				<div id="container" class="row">
 					<?php for($i=1;$i<25;$i++){?>
-					<div class="col-sm-6 item">
+					<div class="col-sm-6 itemm">
 						<div style="margin-bottom: 30px;">
-							<img class="img-portfolio img-responsive" src="assets/img/<?echo $i?>.jpg">
+							<img class="img-responsive" src="<?echo base_url()?>assets/img/<?echo $i?>.jpg">
 						</div>
 					</div>
 					<?}?>

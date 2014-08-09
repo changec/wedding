@@ -20,7 +20,7 @@ class Cw extends CI_Controller {
 	public function insertData()
 	{
 				   $name = $this->theme_model->filter($this->input->post("name"));
-		$change_or_wendy = $this->theme_model->filter($this->input->post("change_or_wendy"));
+		$changewendy = $this->theme_model->filter($this->input->post("changewendy"));
 				$is_join = $this->theme_model->filter($this->input->post("is_join"));
 					$big = $this->theme_model->filter($this->input->post("big"));
 				  $small = $this->theme_model->filter($this->input->post("small"));
@@ -32,7 +32,7 @@ class Cw extends CI_Controller {
 		
 		$data = array(
 					   'name' => $name,
-		 	'change_or_wendy' => $change_or_wendy,
+		 	'change_or_wendy' => $changewendy,
 					'is_join' => $is_join,
 						'big' => $big,
 					  'small' => $small,

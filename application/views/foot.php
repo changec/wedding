@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Love</strong>
+                    <h4><strong>Love U</strong>
                     </h4>
                     <p class="text-muted">Copyright &copy; Change &amp; Wendy 2014</p>
                 </div>
@@ -21,7 +21,7 @@
 
 	<!-- masonry -->
 	<script src="<?=base_url()?>assets/js/masonry.pkgd.min.js"></script>
-	
+	<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
 	<!-- Form Validation -->
 	<script src="<?=base_url()?>assets/js/jquery-validation/jquery.validate.js"></script>
     
