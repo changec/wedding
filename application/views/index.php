@@ -145,7 +145,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1 text-center">
-				<h2>婚紗照</h2>
+				<h2>婚紗照(側拍)</h2>
 				<hr class="small">
 			</div>
 		</div>

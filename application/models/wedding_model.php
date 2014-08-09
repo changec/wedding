@@ -15,7 +15,7 @@ class Wedding_model extends CI_Model {
 	//Åª¨ú¸ê®Æ
 	function getResult()
 	{
-		$sql = "select * from `guest_file`";
+		$sql = "select  * from `guest_file` group by name order by add_time ;";
 		$query=$this->db->query($sql);
     	return $query;
 	}
