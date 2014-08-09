@@ -12,4 +12,11 @@ class Wedding_model extends CI_Model {
 		$this -> db -> insert('guest_file', $data);
 		//return $this->db->insert_id();
 	}
+	//Åª¨ú¸ê®Æ
+	function getResult()
+	{
+		$sql = "select * from `guest_file`";
+		$query=$this->db->query($sql);
+    	return $query;
+	}
 }

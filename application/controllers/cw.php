@@ -47,6 +47,13 @@ class Cw extends CI_Controller {
 		echo 'done';
 		die();
 	}
+	function result()
+	{
+	
+		$data['title']='調查結果';
+		$data['result']= $this->wedding_model->getResult()->result();
+		$this->theme_model->loadTheme('result',$data);
+	}
 }
 
 /* End of file cw.php */
