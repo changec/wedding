@@ -17,12 +17,12 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-4">
-								<h3>訂婚</h3>
+								<h3>訂婚(女方親友)</h3>
 								<h4>時間：<u>2014年10月18日</u> 星期六中午</h4>
 								<h4>地點：<u>新北市新莊區中正路465號</u> 海大王海鮮餐廳</h4>
 							</div>
 							<div class="col-lg-4">
-								<h3>結婚</h3>
+								<h3>結婚(男方親友)</h3>
 								<h4>時間：<u>2014年11月23日</u> 星期日中午</h4>
 								<h4>地點：<u>新北市三峽區正義街11-3號</u> 金帝王海鮮餐廳</h4>
 							</div>
@@ -54,7 +54,7 @@
 							<label class="wedding" for="big">4.需要為您保留幾個位置呢(大人喔)?</label>
 							<select class="form-control" id="big" name="big">
 								<option value="0">0</option>
-								<option value="1">1</option>
+								<option value="1" selected="selected">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
 								<option value="4">4</option>
@@ -124,6 +124,24 @@
 					<div class="radio">
 						<label>
 							<input type="radio" name="which" id="wendy" value="新北市新莊區中正路456號"> 女方 海大王海鮮餐廳 新北市新莊區中正路456號
+						</label>
+					</div>
+				</div>
+				<div class="form-group" style="padding-bottom:15px;">
+					<label class="wedding" for="travel">請選擇你您的交通工具</label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="travel" value="driving" checked="checked"> 自行開車
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="travel" value="transit"> 大眾運輸
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="travel" value="walking"> 走路！！
 						</label>
 					</div>
 				</div>

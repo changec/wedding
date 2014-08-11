@@ -57,6 +57,7 @@ $(function(){
  // Events
     $('body')
         .on('click', '[data-map-control]', function () {
+			var travel = $( "input:radio[name=travel]:checked" ).val();
 			var start = $( "input:text[name=start]" ).val();
 			if(!start){ start = '新北市板橋區'};
 			var end = $( "input:radio[name=which]:checked" ).val();
@@ -72,7 +73,7 @@ $(function(){
                     'direction': [{
 						'from': start,
 						  'to': end,
-					  'travel': 'driving',
+					  'travel': travel,
 					   'panel': '#direction-panel'
 					}]
                 };
