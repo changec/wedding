@@ -47,6 +47,7 @@
 							<select class="form-control" id="is_join" name="is_join">
 								<option value="0">會喔～排除萬難也要到場！</option>
 								<option value="1">抱歉拉～抽不出時間！</option>
+								<option value="2">還不一定呢～正在排除萬難中！</option>
 							</select>
 
 						</div>
@@ -115,7 +116,7 @@
 			<div class="col-lg-4">
 				<div id="path-form">
 				<div class="form-group" style="padding-bottom:15px;">
-					<label class="wedding" for="which">請選擇你要參加的場次</label>
+					<label class="wedding" for="which">請選擇男方或女方</label>
 					<div class="radio">
 						<label>
 							<input type="radio" name="which" id="change" value="新北市三峽區正義街11-3號" checked="checked"> 男方 金帝王海鮮餐廳 新北市三峽區正義街11-3號
@@ -128,7 +129,7 @@
 					</div>
 				</div>
 				<div class="form-group" style="padding-bottom:15px;">
-					<label class="wedding" for="travel">請選擇你您的交通工具</label>
+					<label class="wedding" for="travel">請選擇您的交通工具</label>
 					<div class="radio">
 						<label>
 							<input type="radio" name="travel" value="driving" checked="checked"> 自行開車
