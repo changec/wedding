@@ -28,7 +28,15 @@
 							<tr>
 								<td><?php echo $i;?></td>
 								<td><?php echo $val->name?></td>
-								<td><?php echo ($val->is_join=='0'?'參加':'不參加')?></td>
+								<td>
+									<?if($val->is_join=='0'){?>
+										參加
+									<?}else if($val->is_join=='1'){?>
+										不參加
+									<?}else{?>
+										可能參加
+									<?}?>
+								</td>
 								<td><?php echo $val->big?>大 <?php echo ($val->small=='0'?'':$val->small.'小')?></td>
 								<td><?php echo ($val->when_su=='1')?'素食':'';?></td>
 								<td><?php echo $val->say_something?></td>
@@ -57,7 +65,15 @@
 							<tr>
 								<td><?php echo $j;?></td>
 								<td><?php echo $val->name?></td>
-								<td><?php echo ($val->is_join=='0'?'參加':'不參加')?></td>
+								<td>
+									<?if($val->is_join=='0'){?>
+										參加
+									<?}else if($val->is_join=='1'){?>
+										不參加
+									<?}else{?>
+										可能參加
+									<?}?>
+								</td>
 								<td><?php echo $val->big?>大 <?php echo ($val->small=='0'?'':$val->small.'小')?></td>
 								<td><?php echo ($val->when_su=='1')?'素食':'';?></td>
 								<td><?php echo $val->say_something?></td>
