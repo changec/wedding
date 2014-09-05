@@ -18,7 +18,7 @@
 						<div class="col-lg-6">
 							<h3>訂婚(女方親友)</h3>
 							<h4>時間：<u>2014年10月18日</u> 星期六中午</h4>
-							<h4>地點：<u>新北市新莊區中正路456號</u> 海大王海鮮餐廳</h4>							
+							<h4>地點：<u>新北市新莊區中正路456號</u> 海大王時尚會館-丹鳳廳</h4>							
 						</div>
 						<div class="col-lg-6">
 							<h3>結婚(男方親友)</h3>
@@ -120,7 +120,7 @@
 					</div>
 					<div class="radio">
 						<label>
-							<input type="radio" name="which" id="wendy" value="新北市新莊區中正路456號"> 女方 海大王海鮮餐廳 新北市新莊區中正路456號
+							<input type="radio" name="which" id="wendy" value="新北市新莊區中正路456號"> 女方 海大王時尚會館-丹鳳廳 新北市新莊區中正路456號
 						</label>
 					</div>
 				</div>
