@@ -52,7 +52,8 @@ $(function(){
     //var direction = ;
 	$('#map').tinyMap({
 		'center': '新北市板橋區',
-        'zoom': 13
+        'zoom': 13,
+        'scrollwheel':false
 	});    
  // Events
     $('body')

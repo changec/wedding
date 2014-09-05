@@ -20,7 +20,7 @@ class Cw extends CI_Controller {
 	public function insertData()
 	{
 				   $name = $this->theme_model->filter($this->input->post("name"));
-		$changewendy = $this->theme_model->filter($this->input->post("changewendy"));
+			$changewendy = $this->theme_model->filter($this->input->post("changewendy"));
 				$is_join = $this->theme_model->filter($this->input->post("is_join"));
 					$big = $this->theme_model->filter($this->input->post("big"));
 				  $small = $this->theme_model->filter($this->input->post("small"));
@@ -50,10 +50,11 @@ class Cw extends CI_Controller {
 	function result()
 	{
 	
-		$data['title']='½Õ¬dµ²ªG';
+		$data['title']='æƒ è‡´ä¸€å€‹å®¶';
 		$data['result']= $this->wedding_model->getResult()->result();
 		$this->theme_model->loadTheme('result',$data);
 	}
+	
 }
 
 /* End of file cw.php */

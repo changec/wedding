@@ -18,7 +18,7 @@
 						<div class="col-lg-6">
 							<h3>訂婚(女方親友)</h3>
 							<h4>時間：<u>2014年10月18日</u> 星期六中午</h4>
-							<h4>地點：<u>新北市新莊區中正路465號</u> 海大王海鮮餐廳</h4>							
+							<h4>地點：<u>新北市新莊區中正路456號</u> 海大王海鮮餐廳</h4>							
 						</div>
 						<div class="col-lg-6">
 							<h3>結婚(男方親友)</h3>
@@ -32,7 +32,7 @@
 						<label class="wedding" for="name">1.您的大名</label>
 						<input type="text" class="form-control" id="name" name="name" placeholder="請告訴我們您的大名，讓我們知道你是誰唷～">
 					</div>
-					<div class="form-group"">
+					<div class="form-group">
 						<label class="wedding" for="changewendy">2.您是男方還是女方的朋友呢?</label>
 						<select class="form-control" id="changewendy" name="changewendy">
 							<option value="0">男方(承致)</option>
